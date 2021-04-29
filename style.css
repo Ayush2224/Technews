@@ -1,0 +1,297 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    display: flex;
+    background-color: black;
+    height: 63px;
+}
+
+
+.nav-list{
+    width: 75%;
+}
+
+
+.navbar ul{
+    display: flex;
+}
+
+
+.navbar ul li{
+    list-style: none;
+    margin: 5px 40px 6px 21px;
+    padding: 5px;
+}
+
+
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive; 
+}
+
+
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.icons{
+    color: white;
+    margin: auto;
+    padding: 4px;
+    margin-top: 5px;
+}
+
+
+.icons:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#btn{
+    margin-right: 5%;
+    background: none;
+    font-family: 'Baloo Bhaina 2', cursive;
+    border-radius: 10px;
+    width: 107px;
+    font-size: 18px;
+    outline: none;
+}
+
+
+#btn:hover{
+    background-color:rgb(97, 93, 93);
+    color: white;
+}
+
+.burger{
+    cursor: pointer;
+    margin-left: 5%;
+}
+
+.line{
+    width: 33px;
+    background-color:black;
+    height: 4px;
+    margin:5px
+}
+
+.section :hover{
+    color: red;
+    cursor: pointer;
+}
+
+.caro{
+    margin: 0% 0%;
+    padding: 0% 22%;
+    background-color: rgb(119, 116, 116);
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box1{
+    border: 2px solid rgb(184, 132, 132);
+    width: 33%;
+    margin: 3px 6px;
+    border-radius: 23px;
+    padding: 24px;
+    background-color: rgb(202, 186, 186);
+}
+
+
+#services .box1 img{
+    height: 180px;
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.section2{
+    display: flex;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.crd{
+    display: flex;
+    border: 2px solid rgb(139, 108, 108);
+    border-radius: 23px;
+    margin: 13px;
+    background-color: rgb(209, 207, 207);
+}
+
+
+.crd img{
+    height: 160px;
+    margin: 20px;
+    align-self: center;
+}
+
+.text{
+    align-self: center;
+    justify-self: center;
+}
+
+.text1{
+    margin-top: 10px;
+}
+
+
+.vertical{
+    background-color: black;
+    color: white;
+    width: 1px;
+}
+
+
+.heading{
+    margin:53px 0px 10px 34px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.burgercontents{
+    /* opacity: 0; */
+    position: absolute;
+    top: 64px;
+    left:-31px;
+}
+
+.visible{
+    opacity: 0;
+}
+
+.burgercontents ul li{
+    list-style:none;
+}
+
+
+.burgercontents.show{
+    display: flex;
+}
+
+.burgercontents ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.contents{
+    padding: 20px;
+    border: 2px solid white;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 25px;
+    background-color: black;
+    width: 330px;
+    height: 74px;
+}
+
+@media only screen  and (min-width:750px) and (max-width:1000px){
+    .section2{
+        flex-direction: column;
+    }
+    .vertical{
+        height: 1px;
+        width: 100%;
+    }
+    .crd{
+        width: 190%;
+    }
+
+    #services .box1 img{
+        height: 120px;
+    }
+
+}
+
+
+
+@media only screen   and (min-width:500px) and (max-width:750px){
+    .section2{
+        flex-direction: column;
+    }
+    .vertical{
+        height: 1px;
+        width: 100%;
+    }
+    .crd{
+        width: 190%;
+    }
+
+    #services .box1 img{
+        height: auto;
+    }
+    .navbar ul li{
+        margin: 7px 0px 6px 13px;
+        padding: 5px;
+    }
+
+    .text1{
+        position: absolute;
+        opacity: 0;
+    }
+    .span{
+        position: absolute;
+        opacity: 0;
+    }
+}
+
+
+@media only screen and (max-width:500px){
+    .section2{
+        flex-direction: column;
+    }
+    .vertical{
+        height: 1px;
+        width: 100%;
+    }
+    .crd{
+        width: 190%;
+    }
+
+    #services .box1 img{
+        height: auto;
+    }
+
+    .text1{
+        position: absolute;
+        opacity: 0;
+    }
+    .span{
+        position: absolute;
+        opacity: 0;
+    }
+
+    .navbar{
+        position: absolute;
+        opacity: 0;
+        height: 0px;
+    }
+
+    #btn{
+        position: relative;
+        visibility: hidden;
+        margin-right: 0%;
+    }
+}
